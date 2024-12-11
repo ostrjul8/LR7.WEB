@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Comic Sans MS;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.block {
+    padding: 2vw;
+    background-color: #ffffff;
+    text-align: center;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.block-1 {
+    grid-column: 1 / 4;
+    background-color: #78866B;
+    text-align: left;
+    position: relative;
+    min-height: 150px;
+}
+
+.block-x {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    padding: 1vw;
+    width: calc(100% - 4vw);
+    max-width: 300px;
+    min-width: 100px;
+    max-height: 100%;
+    border: none;
+    background-color: #78866B;
+    color: #FFD700;
+    overflow: auto;
+}
+
+.block-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background-color: #3E2723;
+    color: #FFD700;
+    overflow: auto;
+}
+
+.block-3 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    font-size: 1.5vw;
+    background-color: #3E2723;
+    overflow: auto;
+}
+
+.block-4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+    background-color: #78866B;
+    overflow: auto;
+}
+
+.block-5 {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    padding: 0;
+    margin: 0;
+}
+
+.block-5 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.block-6 {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    background-color: #78866B;
+    font-size: 1.5vw;
+    overflow: auto;
+}
+
+.block-7 {
+    grid-column: 1 / 4;
+    background-color: #78866B;
+    text-align: left;
+    padding: 2vw;
+    min-height: 300px;        
+    position: relative;
+    padding-bottom: 80px;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 1fr auto; 
+}
+
+.text-content {
+    padding-bottom: 2vw;
+}
+
+.block-y {
+    padding: 1vw;
+    width: calc(100% - 4vw);
+    max-width: 300px;
+    min-width: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    overflow: auto;
+    border: none;
+    background-color: #78866B;
+    color: #FFD700;
+    overflow: auto;
+}
+
+ol, ul {
+    padding-left: 20px; 
+    margin: 0 auto;
+    max-width: 80%; 
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.5vw;
+    padding-top: 1.5rem;
+}
+
+h2{
+    font-size: 1.5vw;
+}
+
+a{
+    color: #FFD700;
+}
+
+#work {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: calc(50% + 10px);
+    height: calc(70% + 50px);
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 10; 
+    display: none; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#header {
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+#message {
+    font-size: 14px;
+    color: #fff; 
+    margin: 0; 
+    text-align: left; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#close {
+    margin: 0; 
+    padding: 10px 20px;
+}
+
+#controls {
+    display: flex; 
+    width: 100%; 
+    justify-content: flex-end;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px 20px; 
+}
+
+#play, #stop, #reload {
+    padding: 10px 20px;
+}
+
+#anim {
+    width: 50%; 
+    height: 70%; 
+    border: 5px solid red; 
+    position: relative; 
+    overflow: hidden;
+    background-image: url('Літачок2.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#square {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(223, 28, 28);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#stop, #reload  {
+    display: none;
+}
+
+#play {
+    display: inline-block;
+}
